@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Norse-bold;
+    size-adjust:500%;
+    src: url(Norse-Bold.otf);
+}
+body{
+    display:flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(245, 248, 250);
+}
+.imgSection{
+    display: flex;
+    flex-direction: column;
+    background-image: url(cosmo.avif);
+    height: 100vh;
+    width: 35vw;
+    justify-content: center;
+}
+.imgSection #header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background-color: rgb(115, 62, 131,0.15);
+    justify-content: center;
+    margin-bottom: calc(1/3*100vh);
+}
+.imgSection #footer{
+    position: absolute;
+    bottom: 10px;
+    left: calc(1/2*27vh);
+    color:white;
+}
+.imgSection :link, .imgSection :visited{
+    color: white
+}
+#odinhead{
+    width: 109px;
+    height: 145px;
+}
+.txtSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 65vw;
+}
+.txtSection #mainText{
+    flex-direction: column;
+    flex: 1;
+    display:flex;
+    justify-content: flex-end;
+    margin: 0 345px 0 45px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+#mainText #firstParagraph{
+    margin-bottom: 0px;
+}
+#mainText #secondParagraph{
+    margin-bottom: 50px;
+}
+.txtSection form{
+    flex: 1;
+    background-color: white;
+    margin:0;
+    box-shadow: 5px 5px 10px rgb(175, 180, 180);
+}
+form h3{
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+form label {
+    font-size: 12px;
+}
+fieldset{
+    display: flex;
+    border: none;
+    margin:0;
+}
+fieldset>div{
+    display:flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.secondField{
+    margin-left: 50px;
+}
+input{
+    border-radius: 5px; 
+    padding:5px 50px 5px 8px;
+}
+.error{
+    border-color: red;
+    outline-color: red;
+}
+.error:focus{
+    border-color: red;
+    outline-color: red;
+}
+input:focus {
+    outline-color: rgb(23, 23, 199);
+    box-shadow: 4px 4px 4px rgb(173, 173, 173);
+}
+.txtSection #create{
+    flex: 1;
+}
+#create button{
+    margin: 30px 0px 15px 30px;
+    margin-left: 45px;
+    border: none;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+    background-color: rgb(51, 23, 77);
+    color:white;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+#log{
+    margin: 0px 0px 0px 45px;
+}
+#log a {
+    color: rgb(51,23,77);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#textLogo {
+    font-family: Norse-bold;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="author" content="Daniel W">
+    <link rel = "stylesheet" href = "style.css">
+    <script src="script.js" defer></script>
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="imgSection">
+        <div id="header">
+            <img id="odinhead" src="odin-lined.png" alt="logoimg.png">
+            <div id="textLogo">Galaxxy</div>
+        </div>
+        <div id="footer">
+            Photo by <a href="https://unsplash.com/@alex_andrews">Alexander Andrews</a> on <a href="https://unsplash.com/">Unsplash</a>
+        </div>    
+    </div>
+    <div class="txtSection">
+        <div id="mainText">
+            <p id="firstParagraph">This is not a real online service! 
+                You know you need something like this in your life to help you realize your deepest dreams. <br>
+                Sign up now to get started.</p>
+            <p id="secondParagraph">You know you want to.</p>
+        </div>
+        <form action="#" method="post">
+            <h3>Let's do this!</h3>
+            <fieldset>
+                <div>
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id ="first_name" name="first_name" onchange=""required>
+                </div>
+
+                <div class="secondField">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id ="last_name" name="last_name" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id ="email" name="email" required>
+                </div>
+
+                <div class="secondField">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="text" id= "phone_number" name="phone_number"  pattern="\d{9}" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input class="password" type="password" id="password" name="password" onKeyUp="validate" required>
+                </div>
+
+                <div class="secondField">
+                    <label for="confirmPass">CONFIRM PASSWORD</label>
+                    <input class="password" type="password" id="confirmPass" name="confirmPass" onKeyUp="validate" required>
+                </div>
+            </fieldset>
+        </form>
+        <div id="create">
+            <button type="submit">Create Account</button>
+            <p id="log">Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
